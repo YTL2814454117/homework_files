@@ -1,11 +1,12 @@
-#include <iostream>
+#include <iostream> // 插入输入输出流头文件
 
 #include "inc/stack.h" // 插入头文件
 
 using namespace std; // 规定命名空间
+// 程序入口
 int main()
 {
-    StackClass *stack = new StackClass(4); // 在堆内存中申请4个长度的栈
+    StackClass<int> *stack = new StackClass<int>(4); // 在堆内存中申请4个长度的栈
     while (true)
     {
         string operate;        // 定义字符串指令
@@ -16,7 +17,7 @@ int main()
 
         if (operate == "ps") // 入栈
         {
-            float x;
+            float x;  // 定义变量
             cin >> x; // 键入入栈数据
             if (cin.fail())
             {
@@ -28,8 +29,8 @@ int main()
         }
         else if (operate == "pp") // 出栈
         {
-            float x;
-            stack->pop(x);
+            int x;             // 定义变量
+            stack->pop(x);     // 实现出栈功能
             cout << x << endl; //后进先出
         }
         else if (operate == "t") // 显示栈顶值
@@ -38,9 +39,9 @@ int main()
                 cout << stack->top() << endl; // 输出栈顶值
         }
         else if (operate == "s") // 展示栈内元素
-            stack->show();
+            stack->show();       // 实现展示功能
         else if (operate == "q") // 退出
             break;
     }
-    return 0;
+    return 0; // 程序结束
 }

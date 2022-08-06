@@ -1,13 +1,14 @@
-#include <iostream>
-#include <string>
+#include <iostream>    // 插入输入输出流头文件
+#include <string>      // 插入字符串头文件
 #include "inc/queue.h" // 插入头文件
 using namespace std;   // 规定命名空间
+// 程序入口
 int main()
 {
-    QueueClass *queue = new QueueClass(4); // 创建4个长度的循环队列
-    while (true)
+    QueueClass<int> *queue = new QueueClass<int>(4); // 创建4个长度的循环队列
+    while (true)                                     // 执行恒为真的循环
     {
-        string operate;
+        string operate;        // 定义指令变量
         getline(cin, operate); // 获得指令
         if (cin.fail())
             cin.clear();
@@ -15,7 +16,7 @@ int main()
 
         if (operate == "e") // 实现入队
         {
-            float x;
+            int x;    // 定义元素变量
             cin >> x; // 输入元素
             if (cin.fail())
             {
@@ -27,13 +28,13 @@ int main()
         }
         else if (operate == "d") // 实现出队
         {
-            float x;
+            int x;                   // 定义元素变量
             queue->dequeue(x);       // 实现出队
             cout << x << "" << endl; // 展示出队元素
         }
         else if (operate == "f") // 展示队首元素
         {
-            if (!queue->isEmpty())
+            if (!queue->isEmpty())                 // 判断队列是否为空
                 cout << queue->getFront() << endl; // 展示队首元素
         }
         else if (operate == "s")

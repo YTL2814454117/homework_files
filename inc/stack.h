@@ -2,11 +2,12 @@
 #define _STACK_H // 定义
 
 #include <iostream> // 插入头文件
+template <class T>  // 创建模板
 class StackClass    // 创建栈类型数据结构
 {
 public:
     // 构造函数确定栈的容量
-    StackClass(size_t capacity) : capacity(capacity), topPointer(0) { data = new float(capacity); }
+    StackClass(size_t capacity) : capacity(capacity), topPointer(0) { data = new T(capacity); }
     // 析构函数释放内存
     ~StackClass() { delete[] data; }
     // 栈空
@@ -14,9 +15,9 @@ public:
     // 栈满
     bool isFull() const { return capacity <= topPointer; }
     // 获得栈顶值
-    float top() { return data[topPointer - 1]; }
+    T top() { return data[topPointer - 1]; }
     // 入栈
-    bool push(float value)
+    bool push(T value)
     {
         if (isFull())
             return false; // 栈满报错
@@ -25,7 +26,7 @@ public:
         return true;
     }
     // 出栈
-    bool pop(float &value)
+    bool pop(T &value)
     {
         if (isEmpty())
             return false; // 栈空报错
@@ -37,13 +38,13 @@ public:
     void show()
     {
         for (int i = topPointer - 1; i >= 0; i--) //从栈顶向栈底展示
-            std::cout << data[i] << " ";
-        std ::cout << std::endl;
+            std::cout << data[i] << " ";          // 逐个输出栈内元素值
+        std ::cout << std::endl;                  // 换行
     }
 
 private:
     size_t capacity;   // 数据容量
     size_t topPointer; // 栈顶计数器
-    float *data;       // 动态申请数据
+    T *data;           // 动态申请数据
 };
 #endif
