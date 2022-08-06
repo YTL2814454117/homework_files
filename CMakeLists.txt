@@ -1,0 +1,5 @@
+include_directories(.)
+project(stack)
+add_executable(stack src/stack.cpp)
+project(queue)
+add_executable(queue src/queue.cpp)
