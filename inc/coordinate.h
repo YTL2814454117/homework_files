@@ -5,6 +5,7 @@
 #include "vector.h"                   // 插入向量头文件
 struct Coordinate2f : public vectorf2 // 地图类继承自向量类
 {
+
     float angle; // 平面角（rad）
     float mag;   // 欧式距离
     // 获得平面角
