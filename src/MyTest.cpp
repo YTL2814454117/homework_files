@@ -28,7 +28,7 @@ int main(int argc, char **argv)
             imshow("gray", catg); // 展示灰域图
             waitKey(1000);        // 展示时间
             imshow("hsv", cath);  // 展示hsv图
-            waitKey(5000);        // 展示时间
+            waitKey(7000);        // 展示时间
             destroyAllWindows();  // 清除窗口
         }
         else if (operate == "bn") // 如果命令为“bn"
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
             Mat catb;                                   // 定义黑白矩阵
             threshold(catg, catb, 0, 255, THRESH_OTSU); // 将灰度图转成黑白图
             imshow("catb", catb);                       // 展示黑白图
-            waitKey(4000);                              // 展示时间
+            waitKey(7000);                              // 展示时间
             destroyAllWindows();                        // 清除所有窗口
         }
         else if (operate == "cut") // 如果命令为”cut“
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
             imshow("serious", ser);                               // 展示原图
             waitKey(1000);                                        // 展示时间
             imshow("input", croppedSer);                          // 展示裁剪后的图片
-            waitKey(5000);                                        // 展示时间
+            waitKey(7000);                                        // 展示时间
             destroyAllWindows();                                  // 清除所有窗口
         }
         else if (operate == "cn") // 如果命令为”cn“
@@ -61,7 +61,7 @@ int main(int argc, char **argv)
             blur(Wingy, edge, Size(3, 3));             // 使用3×3内核降噪
             Canny(edge, edge, 3, 9, 3);                // 运行canny算子
             imshow("Canny算法轮廓提取结果", edge);     // 展示提取的轮廓
-            waitKey(5000);                             // 展示时间
+            waitKey(7000);                             // 展示时间
             destroyAllWindows();                       // 清除所有窗口
         }
         else if (operate == "q") // 如果命令为“q"
