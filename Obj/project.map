@@ -8,9 +8,9 @@ Section Cross References
     led8.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
     led8.o(.text) refers to led8.o(.constdata) for LED_table
     main.o(.text) refers to system_stm32f4xx.o(.text) for SystemInit
+    main.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
     main.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
     main.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
-    main.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
     main.o(.text) refers to tim3.o(.text) for TIM3_Int_Init
     main.o(.text) refers to os_cpu_c.o(.text) for OS_CPU_SysTickInit
     main.o(.text) refers to os_time.o(.text) for OSTimeDly
