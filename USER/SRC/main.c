@@ -24,7 +24,7 @@ int main(void)
 	//的计数频率，计数 5000 次为 500ms
 	while (1)
 	{
-		TIM3_IRQHandler();
+		
 	}
 	return 0;
 }
