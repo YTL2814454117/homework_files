@@ -3,19 +3,19 @@
         {
             "name": "Target 1",
             "includePath": [
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\GeneralFunction\\inc",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\Libraries\\CMSIS",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\Libraries\\Startup",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\uCOSII\\CONFIG",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\uCOSII\\CORE",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\uCOSII\\PORT",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\USER\\INC",
+                "d:\\KeilProj\\proj_8.11\\GeneralFunction\\inc",
+                "d:\\KeilProj\\proj_8.11\\Libraries\\CMSIS",
+                "d:\\KeilProj\\proj_8.11\\Libraries\\Startup",
+                "d:\\KeilProj\\proj_8.11\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc",
+                "d:\\KeilProj\\proj_8.11\\uCOSII\\CONFIG",
+                "d:\\KeilProj\\proj_8.11\\uCOSII\\CORE",
+                "d:\\KeilProj\\proj_8.11\\uCOSII\\PORT",
+                "d:\\KeilProj\\proj_8.11\\USER\\INC",
                 "D:\\keilMDK\\ARM\\ARMCC\\include",
                 "D:\\keilMDK\\ARM\\ARMCC\\include\\rw",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\USER\\SRC",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\GeneralFunction\\src",
-                "c:\\Users\\Y\\Desktop\\proj_8.11\\Libraries\\STM32F4xx_StdPeriph_Driver\\src"
+                "d:\\KeilProj\\proj_8.11\\USER\\SRC",
+                "d:\\KeilProj\\proj_8.11\\GeneralFunction\\src",
+                "d:\\KeilProj\\proj_8.11\\Libraries\\STM32F4xx_StdPeriph_Driver\\src"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
