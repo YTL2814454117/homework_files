@@ -1,7 +1,6 @@
 #include "tim3.h"
-#include "led.h"
 #include "stm32f4xx_tim.h"
-#include "stm32f4xx_gpio.h"
+#include "led.h"
 #include "stm32f4xx_rcc.h"
 
 void TIM3_Int_Init(unsigned short arr, unsigned short psc)
