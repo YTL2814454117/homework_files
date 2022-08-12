@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                " D:\\keilMDK\\ARM\\Pack\\ARM\\CMSIS\\4.5.0\\CMSIS\\Include",
+                "C:\\Users\\Y\\Desktop\\F4Template\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
