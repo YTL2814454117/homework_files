@@ -1,33 +1,16 @@
 {
     "configurations": [
         {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**",
-                " D:\\keilMDK\\ARM\\Pack\\ARM\\CMSIS\\4.5.0\\CMSIS\\Include",
-                "C:\\Users\\Y\\Desktop\\F4Template\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "D:\\mingw64\\bin\\gcc.exe",
-            "cStandard": "c11",
-            "cppStandard": "gnu++14",
-            "intelliSenseMode": "windows-gcc-x64"
-        },
-        {
             "name": "Target 1",
             "includePath": [
-                "d:\\KeilProj\\Libraries\\CMSIS",
-                "d:\\KeilProj\\Libraries\\Startup",
-                "d:\\KeilProj\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc",
-                "d:\\KeilProj\\User\\inc",
+                "d:\\KeilProj\\proj_8.12\\Libraries\\CMSIS",
+                "d:\\KeilProj\\proj_8.12\\Libraries\\Startup",
+                "d:\\KeilProj\\proj_8.12\\Libraries\\STM32F4xx_StdPeriph_Driver\\inc",
+                "d:\\KeilProj\\proj_8.12\\User\\inc",
                 "D:\\keilMDK\\ARM\\ARMCC\\include",
                 "D:\\keilMDK\\ARM\\ARMCC\\include\\rw",
-                "d:\\KeilProj\\User\\src",
-                "d:\\KeilProj\\Libraries\\STM32F4xx_StdPeriph_Driver\\src"
+                "d:\\KeilProj\\proj_8.12\\User\\src",
+                "d:\\KeilProj\\proj_8.12\\Libraries\\STM32F4xx_StdPeriph_Driver\\src"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
